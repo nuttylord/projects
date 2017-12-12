@@ -421,7 +421,7 @@ public class OVRPlayerController : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Gets the allow mouse rotation.
+	/// Gets the allow mouse rotation..
 	/// </summary>
 	/// <param name="skipMouseRotation">Allow mouse rotation.</param>
 	public void GetSkipMouseRotation(ref bool skipMouseRotation)

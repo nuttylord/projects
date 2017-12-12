@@ -34,7 +34,7 @@ public class PlayerControllerIJKL : MonoBehaviour
                 moveDirection.x *= -speed;
                 moveDirection.z = 0;
             }
-            if (Input.GetKeyDown(KeyCode.J))
+            else if (Input.GetKeyDown(KeyCode.J))
             {
                 moveDirection.x = 0;
                 moveDirection.z *= -speed;
@@ -43,6 +43,10 @@ public class PlayerControllerIJKL : MonoBehaviour
             {
                 moveDirection.x = 0;
                 moveDirection.z *= speed;
+            } else
+            {
+                moveDirection.x = 0;
+                moveDirection.z = 0;
             }
 
 
