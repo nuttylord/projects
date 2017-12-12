@@ -539,8 +539,8 @@ namespace Immerseum {
 
             public static bool isHMDConnected {
                 get {
-                    if (VRSettings.enabled == true) {
-                        if (VRDevice.isPresent) {
+                    if (UnityEngine.XR.XRSettings.enabled == true) {
+                        if (UnityEngine.XR.XRDevice.isPresent) {
                             return true;
                         }
                     } else {
@@ -562,7 +562,7 @@ namespace Immerseum {
 
             public static bool isOculusHMDConnected {
                 get {
-                    if (OVRManager.isHmdPresent == true || VRDevice.model.Contains("Oculus Rift")) {
+                    if (OVRManager.isHmdPresent == true || UnityEngine.XR.XRDevice.model.Contains("Oculus Rift")) {
                         return true;
                     }
                     return false;
@@ -579,7 +579,7 @@ namespace Immerseum {
 
             public static bool isPlaystationVRHMDConnected {
                 get {
-                    if (VRDevice.isPresent == true && VRSettings.loadedDeviceName == "PlayStationVR") {
+                    if (UnityEngine.XR.XRDevice.isPresent == true && UnityEngine.XR.XRSettings.loadedDeviceName == "PlayStationVR") {
                         return true;
                     }
                     return false;
